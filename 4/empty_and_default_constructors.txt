@@ -1,0 +1,34 @@
+	// empty
+    // 0000000000400b1c <A::A(A const&)>:
+    // 400b1c:       55                      push   rbp
+    // 400b1d:       48 89 e5                mov    rbp,rsp
+    // 400b20:       48 89 7d f8             mov    QWORD PTR [rbp-0x8],rdi
+    // 400b24:       48 89 75 f0             mov    QWORD PTR [rbp-0x10],rsi
+    // 400b28:       ba b8 0c 40 00          mov    edx,0x400cb8
+    // 400b2d:       48 8b 45 f8             mov    rax,QWORD PTR [rbp-0x8]
+    // 400b31:       48 89 10                mov    QWORD PTR [rax],rdx
+    // 400b34:       48 8b 45 f8             mov    rax,QWORD PTR [rbp-0x8]
+    // 400b38:       48 c7 40 08 00 00 00    mov    QWORD PTR [rax+0x8],0x0
+    // 400b3f:       00
+    // 400b40:       90                      nop
+    // 400b41:       5d                      pop    rbp
+    // 400b42:       c3                      ret
+    // 400b43:       90                      nop
+
+    // default
+    // 0000000000400aac <A::A(A const&)>:
+    // 400aac:       55                      push   rbp
+    // 400aad:       48 89 e5                mov    rbp,rsp
+    // 400ab0:       48 89 7d f8             mov    QWORD PTR [rbp-0x8],rdi
+    // 400ab4:       48 89 75 f0             mov    QWORD PTR [rbp-0x10],rsi
+    // 400ab8:       ba b8 0c 40 00          mov    edx,0x400cb8
+    // 400abd:       48 8b 45 f8             mov    rax,QWORD PTR [rbp-0x8]
+    // 400ac1:       48 89 10                mov    QWORD PTR [rax],rdx
+    // 400ac4:       48 8b 45 f0             mov    rax,QWORD PTR [rbp-0x10]
+    // 400ac8:       48 8b 50 08             mov    rdx,QWORD PTR [rax+0x8]
+    // 400acc:       48 8b 45 f8             mov    rax,QWORD PTR [rbp-0x8]
+    // 400ad0:       48 89 50 08             mov    QWORD PTR [rax+0x8],rdx
+    // 400ad4:       90                      nop
+    // 400ad5:       5d                      pop    rbp
+    // 400ad6:       c3                      ret    
+    // 400ad7:       90                      nop
